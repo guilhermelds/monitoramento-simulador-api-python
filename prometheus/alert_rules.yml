@@ -1,0 +1,11 @@
+groups:
+  - name: api-health
+    rules:
+      - alert: HighMemoryUsage
+        expr: process_resident_memory_bytes > 100000000
+        for: 10s
+        labels:
+          severity: warning
+        annotations:
+          summary: "Alta utilização de memória no container"
+          description: "Uso de memória excedeu 100MB por mais de 10s."
