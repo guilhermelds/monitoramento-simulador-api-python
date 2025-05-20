@@ -8,3 +8,7 @@ venv/
 .idea/
 .vscode/
 *.db
+*.pid
+*.tar
+*.img
+*.container
